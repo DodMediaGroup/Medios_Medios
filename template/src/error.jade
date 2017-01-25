@@ -1,0 +1,20 @@
+include ./_head.jade
+body
+    div#wrapper
+        include ./_menu-left.jade    
+        div.content
+            div.line-vertical
+            include ./_menu.jade
+            div.title-section(style="padding: 60px 80px;")
+                h2.wow.fadeInRight(style="font-size: 32px;") ERROR 404
+                div.line-green.wow.fadeInRight
+            div.title-section-about
+                div.wow.fadeInRight.line-green-red
+                    div.line-red
+                    div.line-green
+                h1(style="font-weight: normal; padding: 0 100px;") Hemos detectado un problema y estamos trabajando para solucionarlo tan pronto como sea posible.
+                div.wow.fadeInRight.line-green-red-down
+                    div.line-green
+                    div.line-red
+                p(style="position: absolute;right: 70px; color: #555;font-weight: bold;font-size: 20px;") Disculpe las molestias
+    include ./_footer.jade 

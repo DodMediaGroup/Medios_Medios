@@ -1,0 +1,90 @@
+include ./_head.jade
+body
+    div#wrapper
+        include ./_menu-left.jade 
+        div.content
+            div.line-vertical
+            include ./_menu.jade
+            div.title-section
+                h1.wow.fadeInRight MEDIOS
+                div.line-green.wow.fadeInRight 
+            div.section-content.row
+                div.search
+                    ul
+                        li Buscar por zona
+                        li.options-rbtn
+                            input(id="r1" type="radio" name="group1" value="todos")
+                            label(for="r1")
+                                span
+                            p Todos
+                            input(id="r2" type="radio" name="group1" value="centro")
+                            label(for="r2")
+                                span
+                            p Centro
+                            input(id="r3" type="radio" name="group1" value="occidente")
+                            label(for="r3")
+                                span
+                            p Occidente
+                            input(id="r4" type="radio" name="group1" value="sugamuxi")
+                            label(for="r4")
+                                span
+                            p Sugauxi
+                            input(id="r5" type="radio" name="group1" value="tundama")
+                            label(for="r5")
+                                span
+                            p Tundama
+                            input(id="r6" type="radio" name="group1" value="ricaurte")
+                            label(for="r6")
+                                span
+                            p Ricaurte
+                         li
+                            a.btn-search(href="product-sel.html") Buscar
+                        li
+                           a.btn-back(href="product.html")
+                                p Volver
+                                img(src="images/icon-back.png") 
+                div.col-md-6.col-xs-12
+                    div.map-boy-location
+                        img(src="images/map-boy-center.svg")
+                div.col-md-6.col-xs-12
+                    div.data-products
+                        h1 ZONA CENTRO
+                        ul
+                             li
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li.
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li 
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li 
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li 
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                             li
+                                p Tunja  Sector Viaducto Circunvalar
+                                a(href="#") 
+                                    span Ver mas +
+                    
+    include ./_footer.jade

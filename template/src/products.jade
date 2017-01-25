@@ -1,0 +1,26 @@
+include ./_head.jade
+body
+    div#wrapper
+        include ./_menu-left.jade 
+        div.content
+            div.line-vertical
+            include ./_menu.jade
+            div.title-section
+                h1.wow.fadeInRight MEDIOS PROPIOS
+                div.line-green.wow.fadeInRight
+            div.options.row.center-xs
+                div.image-option.col-xs-6
+                    a(href="product.html")
+                        img.img__service(src="images/vallas.svg")
+                        p VALLAS
+                        div.view
+                                img(src="images/mas.svg").js-img-to-svg
+                                p Ver
+                div.image-option.col-xs-6
+                    a(href="product.html")
+                        img.img__service(src="images/eucol.svg")
+                        p PARADEROS
+                        div.view
+                                img(src="images/mas.svg").js-img-to-svg
+                                p Ver
+    include ./_footer.jade

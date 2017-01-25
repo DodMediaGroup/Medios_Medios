@@ -1,0 +1,328 @@
+.principal-footer {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    margin-top: 150px;
+    .responsive(@smartphones, {
+        width: 100%;
+        margin-bottom: 0px;
+        display: block;
+    }
+    );
+}
+
+.footer {
+    margin-left: 4%;
+    width: 72%;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.1);
+    .responsive(@smartphones, {
+        margin-left: 0px;
+        box-shadow: none;
+        width: 100%;
+    }
+    );
+    .content-footer {
+        margin-bottom: -40px;
+        display: flex;
+        .head-footer {
+            display: flex;
+            width: 20%;
+            p {
+                color: @color-red;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            img {
+                height: 30px;
+                margin: 10px;
+            }
+        }
+        .line-footer {
+            height: 2px;
+            background-color: #ED3136;
+            width: 75%;
+            margin-top: 22px;
+            .responsive(@tablets, {
+                width: 62%;
+                margin-left: 12%;
+            }
+            );
+            .responsive(@deviceSmall, {
+                width: 38%;
+                margin-left: 32%;
+            }
+            );
+        }
+    }
+    .form {
+        display: flex;
+        padding: 25px 20px 0px 25px;
+        .left-form {
+            width: 28%;
+            margin-left: 20px;
+            input {
+                color: @color-gray2;
+                font-size: 13px;
+                margin: 5px;
+                padding: 10px;
+                outline: none;
+            }
+        }
+        .right-form {
+            width: 65%;
+            textarea {
+                color: @color-gray2;
+                font-size: 13px;
+                height: 128px;
+                margin: 15px;
+                padding: 10px;
+                outline: none;
+                margin-top: 5px;
+            }
+        }
+        .top-form {
+            display: flex;
+            width: 100%;
+        }
+        .bottom-form {
+            width: 100%;
+        }
+        .btn-send {
+            margin-left: -8px;
+            margin-top: 125px;
+            margin-bottom: 10px;
+            button {
+                border-bottom: none;
+                background-color: @color-red;
+                border-style: none;
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                font-size: 12px;
+                color: white;
+                padding: 2px;
+                margin-top: -15px;
+                position: relative;
+            }
+            .responsive(@notebook, {
+                margin-top: 92px;
+            }
+            );
+            .responsive(@tablets, {
+                margin-top: -30px;
+                text-align: right;
+            }
+            );
+        }
+    }
+    .form-2 {
+        padding: 30px 30px 10px 30px;
+        .top-form {
+            display: flex;
+            width: 100%;
+            input {
+                margin: 10px 5px;
+                color: @color-gray2;
+                outline: none;
+                font-size: 14px;
+            }
+        }
+        .bottom-form {
+            textarea {
+                font-size: 14px;
+                outline: none;
+                margin: 0px 10px 10px 5px;
+                color: @color-gray2;
+                height: 100px;
+                width: 98.8%;
+            }
+        }
+    }
+    .responsive(@notebook, {
+        .content-footer {
+            .head-footer {
+                .line-footer {
+                    width: 78%;
+                }
+            }
+        }
+        .form {
+            .left-form {
+                margin-top: 15px;
+            }
+            .right-form {
+                margin-top: 15px;
+            }
+        }
+    }
+    );
+    .responsive(@tablets, {
+        .content-footer {
+            .head-footer {
+                .line-footer {
+                    width: 70%;
+                }
+            }
+        }
+        .form {
+            display: block;
+            .left-form {
+                margin-top: 10px;
+                width: 96%;
+                margin-left: 0px;
+            }
+            .right-form {
+                width: 96%;
+                margin-left: -10px;
+                margin-top: 0px;
+            }
+        }
+    }
+    );
+}
+
+.contact {
+    width: 95%;
+    bottom: 0;
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, .25);
+    margin: 50px 30px 30px 30px;
+    .responsive(@smartphones,{
+        margin: 40px 10px 20px;
+        });
+    .content-footer {
+        margin-bottom: -40px;
+        display: flex;
+        .head-footer {
+            display: flex;
+            width: 20%;
+            p {
+                color: @color-red;
+                font-size: 14px;
+                font-weight: bold;
+            }
+            img {
+                height: 30px;
+                margin: 10px;
+            }
+        }
+        .line-footer {
+            height: 2px;
+            background-color: #ED3136;
+            width: 75%;
+            margin-top: 22px;
+            .responsive(@tablets, {
+                width: 62%;
+                margin-left: 12%;
+            }
+            );
+            .responsive(@deviceSmall, {
+                width: 38%;
+                margin-left: 32%;
+            }
+            );
+        }
+    }
+    .form-2 {
+        padding: 30px 30px 20px 30px;
+        .top-form {
+            display: flex;
+            width: 100%;
+            .responsive(@smartphones, {
+                display: block;
+            }
+            );
+            input {
+                margin: 10px 5px;
+                color: @color-gray2;
+                outline: none;
+            }
+        }
+        .bottom-form {
+            textarea {
+                outline: none;
+                margin: 0px 10px 10px 5px;
+                color: @color-gray2;
+                height: 100px;
+                width: 98.8%;
+                .responsive(@smartphones, {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                );
+            }
+        }
+        .btn-send {
+            float: right;
+            margin-top: -46px;
+            margin-right: -18px;
+            position: relative;
+            button {
+                border-bottom: none;
+                background-color: @color-red;
+                border-style: none;
+                border-radius: 50%;
+                height: 45px;
+                width: 45px;
+                font-size: 12px;
+                color: white;
+                padding: 2px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    position: relative;
+    margin-top: 0px;
+    width: 20%;
+    .responsive(@smartphones, {
+        width: 100%;
+        display: block;
+    }
+    );
+    .social {
+        display: flex;
+        margin-left: 30%;
+        margin-bottom: 10px;
+        .responsive(@tablets, {
+            margin-left: 20%;
+        }
+        );
+        .social-icon {
+            height: 35px;
+            margin-left: 15px;
+            .responsive(@tablets, {
+                height: 30px;
+            }
+            );
+        }
+        .responsive(@smartphones, {
+            margin-left: 41%;
+        }
+        );
+        .responsive(@deviceSmall, {
+            margin-left: 38%;
+        }
+        );
+    }
+    .text-footer-menu {
+        width: 100%;
+        margin-bottom: 4px;
+        border-top: 1px solid @color-red;
+        text-align: center;
+        p {
+            font-size: 12px;
+            font-weight: bold;
+            color: @color-gray2;
+            margin-left: 10px;
+            margin-bottom: -10px;
+            padding: 0px;
+            .responsive(@tablets, {
+                font-size: 12px;
+                margin-left: 0px;
+            }
+            );
+        }
+    }
+}

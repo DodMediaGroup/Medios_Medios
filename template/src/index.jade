@@ -1,0 +1,43 @@
+include ./_head.jade
+body
+    div#fb-root
+    include ./_menu-left.jade    
+    div.content.smart
+        div.line-vertical
+        include ./_menu.jade
+        div#owl-demo.owl-carousel.owl-theme
+            div.item
+                img(src="images/slide/image1.png")
+            div.item
+                img(src="images/slide/image2.png")
+            div.item
+                img(src="images/slide/image3.png")
+        div.row.center-xs
+            div.ver-mas
+                a(href="") VER MAS
+        br
+        br
+        div.title-section
+            h1.wow.fadeInRight CONOCE NUESTRA OFERTA DE MEDIOS MASIVOS Y ALTERNATIVOS
+            div.line-green.wow.fadeInRight 
+        div.options.row.center-xs
+            div.image-option.col-xs-12.col-md-4
+                a(href="product.html")
+                    img.img__service(src="images/vallas.svg")
+                    p VALLAS
+                    div.view
+                            img(src="images/mas.svg").js-img-to-svg
+                            p Ver
+            div.image-option.col-xs-12.col-md-4
+                a(href="product.html")
+                    img.img__service(src="images/eucol.svg")
+                    p PARADEROS
+                    div.view
+                            img(src="images/mas.svg").js-img-to-svg
+                            p Ver
+            div.image-option.col-xs-12.col-md-4 
+                div.fb-page(data-href="https://www.facebook.com/PlayGroundMag/?fref=ts" data-width="310px" data-tabs="timeline" data-height="400" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true")
+                    div.fb-xfbml-parse-ignore
+                        blockquote(cite="https://www.facebook.com/PlayGroundMag/?fref=ts")
+                            a(href="https://www.facebook.com/PlayGroundMag/?fref=ts")
+    include ./_footer.jade

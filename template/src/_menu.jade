@@ -1,0 +1,12 @@
+div.bar-menu
+    a(href="index.html")
+        img.logo(src="images/logo-menu.svg")
+input(type="checkbox" id="btn-menu")
+label(for="btn-menu" class="icon-menu")
+- var item =[{'icon':'icon-msm','item':'QUIÉNES SOMOS','link':'about.html'},{'icon':'icon-folderService','item':'SERVICIOS','link':'services.html'},{'icon':'icon-medios','item':'MEDIOS PROPIOS','link':'products.html'},{'icon':'icon-clients','item':'CLIENTES','link':'clients.html'},{'icon':'icon-question','item':'PREGUNTAS FRECUENTES','link':'questions.html'},{'icon':'icon-contact','item':'CONTACTO','link':'contact.html'}]
+ul.menu
+    each val in item 
+        li.col-xs
+            a(href="#{val.link}")
+                span /
+                p= val.item

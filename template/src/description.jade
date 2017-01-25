@@ -1,0 +1,71 @@
+include ./_head.jade
+body
+    div#wrapper
+        include ./_menu-left.jade 
+        div.content
+            div.line-vertical
+            include ./_menu.jade
+            div.title-section
+                h1.wow.fadeInRight MEDIOS
+                div.line-green.wow.fadeInRight 
+            div.image-other
+            div.section-content
+                div.title
+                    h1.red VALLAS / TUNJA BOGOTÁ
+                        span  Sector viaduto circunvalar
+                        a(href="product.html")
+                            p Volver
+                            img(src="images/icon-back.png") 
+                div.section-options.row.around-xs
+                    ul.col-xs.type.nav-pills
+                        li 
+                            a(data-toggle="pill" href="#option1")
+                                img(src="images/site.svg").js-img-to-svg
+                                p UBICACIÓN
+                        li 
+                            a(data-toggle="pill" href="#option2")
+                                img(src="images/cash.svg").js-img-to-svg
+                                p TARIFAS
+                        li 
+                            a(data-toggle="pill" href="#option3")
+                                img(src="images/t-cercha.svg").js-img-to-svg
+                                p TIPO CERCHA
+                        li 
+                            a(data-toggle="pill" href="#option4")
+                                img(src="images/info.svg").js-img-to-svg.info-ico
+                                p CONCEPTOS
+                        li 
+                            a(data-toggle="pill" href="#option5")
+                                img(src="images/hands.svg").js-img-to-svg.hands-ico
+                                p CONDICIONES <br> DE NEGOCIACIÓN
+                    div.tab-content 
+                        div.content-ubicacion.row#option1.tab-pane.active
+                           div#map
+                         div.content-ubicacion.row#option2.tab-pane
+                            div.location-options.col-xs
+                               div.location-option-content
+                                   strong PLAN DE UN MES
+                                   br
+                                   span 1´600.000 + IVA
+                                div.location-option-content
+                                   strong PLAN DE UN MES
+                                   br
+                                   span 1´600.000 + IVA
+                                div.location-option-content
+                                   strong PLAN DE UN MES
+                                   br
+                                   span 1´600.000 + IVA
+                        div.content-ubicacion.row#option3.tab-pane
+                            div.location-options.col-xs
+                               div.location-option-content
+                                   img(src="images/esp-cercha.svg")
+                        div.content-ubicacion.row#option4.tab-pane
+                            div.location-options.col-xs
+                               div.location-option-content
+                                   span  - Instalación <br> - Arrendamiento <br> - Perfecto Mantenimiento mientras la vigencia del contrato
+                        div.content-ubicacion.row#option5.tab-pane
+                            div.location-options.col-xs
+                               div.location-option-content
+                                   span - Legalización y firma de Orden de Servicios entre las partes.<br>- Pago mensual anticipado o acuerdo.<br>- Término del contrato 1-3-6-9-12 meses.
+
+    include ./_footer.jade

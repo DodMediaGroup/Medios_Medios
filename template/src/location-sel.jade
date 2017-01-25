@@ -1,0 +1,31 @@
+include ./_head.jade
+body
+    div#wrapper
+        include ./_menu-left.jade    
+        div.content
+            div.line-vertical
+            include ./_menu.jade
+            div.title-section
+                h1.wow.fadeInRight UBICACIÓN
+                div.line-green.wow.fadeInRight
+            h1.title-red ZONA CENTRO
+            div.row.around-xs 
+                div.map-boy-location.wow.fadeIn
+                    img(src="images/map-boy.svg").map.to-svg
+                div.location-options.col-xs
+                    div.location-option-content
+                        p.wow.fadeInRight Tunja <br> Sector Viaducto
+                        a(href="product-sel.html").view.wow.fadeInRight
+                            img(src="images/mas.svg")
+                            p Ver
+                    div.location-option-content
+                        p.wow.fadeInRight Tunja <br>Av. Circunvalar <br>Calle 17
+                        a(href="#").view.wow.fadeInRight
+                            img(src="images/mas.svg")
+                            p Ver
+                    div.location-option-content
+                        p.wow.fadeInRight Tunja <br> Sector Viaducto <br>Cincunvalar
+                        a(href="#").view.wow.fadeInRight
+                            img(src="images/mas.svg")
+                            p Ver
+    include ./_footer.jade

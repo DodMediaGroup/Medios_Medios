@@ -1,0 +1,28 @@
+{
+  "name": "medios_medios",
+  "version": "1.0.0",
+  "description": "Pagina web de medios sobre medios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Vega",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1",
+    "imagemin-pngquant": "^5.0.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0"
+  }
+}

@@ -1,0 +1,43 @@
+include ./_head.jade
+body
+    include ./_menu-left.jade 
+    div.content
+        div.line-vertical
+        include ./_menu.jade
+        div.title-section.wow.fadeInRight
+            h1 CONTACTO
+            div.line-green
+        div.text-section
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatum magni repudiandae, cumque odit corporis perferendis minima vel necessitatibus atque impedit reiciendis officiis, sequi veritatis! Id sunt omnis explicabo ab.
+        div.contact
+            div.content-footer
+                div.head-footer
+                    img(src="images/icon-call.png")
+                    p CANTÁCTENOS
+                div.line-footer
+            form.form-2
+                div.top-form
+                    input(type="text" placeholder="Nombre" required)
+                    input(type="phone" placeholder="Teléfono" required)
+                    input(type="email" placeholder="e-mail" required)
+                div.bottom-form
+                    textarea(type="text" placeholder="Comentario" required)
+                div.btn-send
+                    button Enviar
+        div.content-social.row.center-xs.middle-xs
+            div.social-contact.col-xs
+                a(href="#")
+                    img.social-icon-contact(src='images/icon-twitter.png')
+                a(href="#")
+                    img.social-icon-contact(src='images/icon-face.png')
+        div.row.center-xs.middle-xs.content-social
+            div.text-contact.col-xs
+                strong Correos
+                p mediossobremedios@hotmail.com <br> metropolisequipamientosltda@hotmail.com
+                strong Teléfonos
+                p 310 4568732 - 3456233 
+                p Boyacá, Colombia
+ script(src="js/jquery-1.11.1.min.js")
+script(src="js/main.js")
+script(src="js/bootstrap.min.js")
+script(src="vendor/wow/wow.min.js")
